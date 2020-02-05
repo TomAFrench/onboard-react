@@ -1,0 +1,60 @@
+{
+  "name": "onboard-react",
+  "version": "0.1.0",
+  "description": "A wrapper context around Blocknative's Onboard",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "yarn tsc",
+    "format": "prettier --write \"src/**/*.tsx\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn lint",
+    "preversion": "yarn lint"
+  },
+  "files": [
+    "lib/**/*",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomAFrench/onboard-react.git"
+  },
+  "keywords": [
+    "onboard",
+    "react",
+    "react-hooks",
+    "ethereum",
+    "javascript",
+    "web3",
+    "context",
+    "metamask",
+    "dapp",
+    "walletconnect",
+    "fortmatic",
+    "portis",
+    "torus",
+    "authereum"
+  ],
+  "author": "Tom French",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TomAFrench/onboard-react/issues"
+  },
+  "homepage": "https://github.com/TomAFrench/onboard-react#readme",
+  "dependencies": {
+    "@types/react": "^16.9.19",
+    "bnc-onboard": "1.2.2",
+    "react": "^16.12.0",
+    "web3": "^1.2.6"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^16.9.5",
+    "@types/web3": "^1.2.2",
+    "prettier": "^1.19.1",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.5"
+  }
+}
